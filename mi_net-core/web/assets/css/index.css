@@ -10,12 +10,12 @@
 
 #tablet {
     border-radius: 30px; border-style:outset; position: absolute;
-    margin: auto; height: 75vh; width: 130vh; background: #3b3b3b;
+    margin: auto; height: 75%; width: 80%; background: #3b3b3b;
 }
 
 #tablet_window {
     border-style: inset; position: absolute; border-radius: 10px;
-    left: 50px; top: 45px; background-size: contain; overflow: hidden;
-    height: 91%; width: 94%; background: #222222; background-repeat: no-repeat;
-    background-size: cover; z-index: 0;
+    background-size: contain; overflow: hidden;
+    height: 96%; width: 98%; background: #222222; background-repeat: no-repeat;
+    background-size: cover; z-index: 0; left: 1%; top: 2%; 
 }
