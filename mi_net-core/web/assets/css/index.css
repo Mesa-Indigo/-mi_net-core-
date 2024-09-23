@@ -409,6 +409,17 @@
     width: 40%;
 }
 
+select {
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-image:
+    linear-gradient(
+    rgb(255, 255, 255),
+    rgb(232, 232, 232));
+}
+
 #viewport {
     border-color:rgb(67, 67, 67);
     border-style: solid;
