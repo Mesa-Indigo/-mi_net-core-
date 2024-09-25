@@ -38,7 +38,17 @@ server_scripts {
     'source/server/**/*.lua'
 }
 
+-- ui main
+ui_page 'web/html/index.html'
+
 -- resource files
 files {
-    'data/locale/*.json'
+    'locale/*.json',
+    'web/css/*.css',
+    'web/js/*.js',
+    'web/html/*.html',
+    'web/img/*.png',
+    'web/data/*.css',
+    'web/data/*.html',
+    'web/data/*.js',
 }
