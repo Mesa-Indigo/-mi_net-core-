@@ -28,7 +28,7 @@
                     <i id="weather" class="fa-solid fa-cloud-sun"></i>
                 </div>
                 <div class="navbar">
-                    <a href="#home" id="home" >Home</a>
+                    <a href="#home">Home</a>
                     <a href="#email">Email</a>
                     <div class="subnav">
                         <button class="subnavbtn">State <i class="fa-solid fa-caret-down"></i></button>
@@ -70,16 +70,8 @@
                 </div>
             </div>
         </div>
+        <script src='/mi_net-core/web/js/index.js'></script>
     </div>
-    <script>
-        $('#loadLink').click(function(event) {
-            event.preventDefault(); // Prevent default link behavior
-
-            // Load the specific div from 'other.html' into the target divs
-            $('#targetDiv1').load('other.html #sourceDiv');  // Load into first target div
-            $('#targetDiv2').load('other.html #sourceDiv');  // Load into second target div
-        });
-    </script>
 </body>
 
 </html>
