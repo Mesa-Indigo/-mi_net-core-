@@ -1,38 +1,37 @@
+document.getElementById("searchbar").addEventListener("change", function() {
+  var selectedSite = this.value;
+  var windowDiv = document.getElementById("window");
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-window.addEventListener('message', async ({ data }) => {
-  switch(data.action) {
-      case 'open':
-          app.opened = true;
-          break;
-      case 'close':
-          app.opened = false;
-          break;
+  if (selectedSite) {
+      // Load the external file based on the selected option
+      loadContent(selectedSite);
+  } else {
+      windowDiv.innerHTML = ''; // Clear the window if no option is selected
   }
 });
 
-window.addEventListener('keydown', async ({ key }) => {
-  let which = key.toLowerCase();
+function loadContent(site) {
+  var windowDiv = document.getElementById("window");
+  
+  // This will map the options to the corresponding HTML files
+  var siteFiles = {
+      'govm': '../data/govm.html',
+      'mail': '../data/mail.html',
+      'relt': '../data/relt.html',
+      'fnst': '../data/fnst.html',
+      'busn': '../data/busn.html',
+      'educ': '../data/educ.html'
+  };
 
-  if (which == 'escape')
-      return await app.post('close');
-});
+  var file = siteFiles[site];
+
+  // Fetch the content from the external file
+  fetch(file)
+      .then(response => response.text())
+      .then(data => {
+          windowDiv.innerHTML = data;
+      })
+      .catch(error => {
+          console.error('Error loading the file:', error);
+      });
+}

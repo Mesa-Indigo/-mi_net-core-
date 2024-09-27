@@ -1,6 +1,9 @@
 
 --[[
 
+    Stock references:
+    https://gta.fandom.com/wiki/BAWSAQ#Companies
+
     Reference for creating stocks
     Label = name that will appear on screen
     Types = filters for the stock

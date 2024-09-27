@@ -37,7 +37,7 @@ background-size: cover;
 #screen {
 border-style: inset;
 position: absolute;
-border-radius: 15px;
+border-radius: 10px;
 background-size: contain;
 overflow: hidden;
 height: 97%;
@@ -128,6 +128,7 @@ background-color: rgb(230, 246, 255);
 }
 
 #window {
-height: 90.9%;
-width: 100%;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
 }
