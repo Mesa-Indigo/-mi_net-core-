@@ -49,6 +49,5 @@ files {
     'web/html/*.html',
     'web/img/*.png',
     'web/data/*.css',
-    'web/data/*.html',
-    'web/data/*.js',
+    'web/data/**/*.html'
 }
