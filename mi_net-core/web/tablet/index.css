@@ -45,6 +45,7 @@ width: 98%;
 z-index: 0;
 left: 1%;
 top: 1.5%;
+overscroll-behavior-y:auto;
 }
 
 #statusbar {
@@ -124,11 +125,31 @@ border-radius: 15px;
 }
 
 #searchbar:hover {
-background-color: rgb(230, 246, 255);
+  background-color: rgb(230, 246, 255);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 #window {
-  overflow-y: auto;
-  height: 100%;
+  overflow-y: scroll;
+  height:100%;
   width: 100%;
 }

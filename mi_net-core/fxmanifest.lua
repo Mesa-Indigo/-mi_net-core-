@@ -39,15 +39,12 @@ server_scripts {
 }
 
 -- ui main
-ui_page 'web/html/index.html'
+ui_page 'web/tablet/index.html'
 
 -- resource files
 files {
     'locale/*.json',
-    'web/css/*.css',
-    'web/js/*.js',
-    'web/html/*.html',
-    'web/img/*.png',
-    'web/data/*.css',
-    'web/data/**/*.html'
+    'web/**/*.html',
+    'web/**/*.css',
+    'web/**/*.js',
 }
