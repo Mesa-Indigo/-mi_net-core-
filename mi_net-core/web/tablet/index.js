@@ -15,7 +15,7 @@ function loadContent(site) {
   
   // This will map the options to the corresponding HTML files
   var siteFiles = {
-    'city': '../city/city.html',
+    'city': '../city/city_home.html',
     'govm': '../government/govm.html',
     'mail': '../data/mail.html',
     'relt': '../data/relt.html',
