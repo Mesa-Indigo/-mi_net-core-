@@ -1,0 +1,35 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box; user-select: none;
+    background: transparent; font-family: "Roboto", system-ui;
+    font-weight: 400; font-style: normal;
+    }
+    
+    #frame {
+    display: flex; justify-content: center; align-items: center;
+    width: 100vw; height: 100vh; position: relative; z-index: 1;
+    }
+    
+    #phone {
+    border-radius: 20px; border-style:outset; position: absolute;
+    margin: auto; height: 60%; width: 15%;
+    background-image: linear-gradient(to bottom right, #4e86db, rgb(22, 45, 82));
+    right: 1%; bottom: 1.5%; background-size: cover; background-repeat: no-repeat;
+    }
+    
+    #screen {
+    border-style: inset;
+    position: absolute;
+    border-radius: 15px;
+    background-size: contain;
+    overflow: hidden;
+    height: 99%;
+    width: 98%;
+    z-index: 0;
+    left: 1%;
+    top: 0.5%;
+    overscroll-behavior-y:auto;
+    background-image:
+    linear-gradient(to bottom right,
+    #f3f3f3,
+    rgb(160, 160, 160));
+    }
