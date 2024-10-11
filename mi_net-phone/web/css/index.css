@@ -19,7 +19,7 @@ body {
 
 .screen {
     width: 15vw; height: 60vh; border-radius: 5px;
-    background: url(../assets/img/bg_stars.svg) center no-repeat #1253;
+    background: url(../assets/img/bg_retro.svg) center no-repeat #1253;
     background-size: 150%; position: relative;
 }
 
@@ -30,27 +30,27 @@ body {
     border-radius: 0px 0px 0px 0px;
     color: #ffffff;
     text-align: center;
+    transition: 0.5s;
 }
 
 .notification:hover {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(240, 248, 255, 0.2);
+    cursor: pointer;
 }
 
 .notification .left,
 .notification .cent,
 .notification .rght {
-    width: 25%; float: left;
-    padding: 3px 0 0 0;
+    width: 25%; float: left; padding: 3px 0 0 0;
 }
 
 .notification .left {
-    text-align: left;
-    padding: 3px 0 0 3px;
+    text-align: left; padding: 3px 0 0 3px;
 }
 
 .notification .cent {
-    width: 48%;
-    text-align: center;
+    width: 48%; text-align: center;
+    letter-spacing: 1px;
 }
 
 .notification .rght {
@@ -58,6 +58,30 @@ body {
 }
 
 .icon_main {
-    width: 100%; height: 3%;
-    line-height: 8%;
+    width: 100%; height: 3%; line-height: 8%;
+    position: absolute; bottom: 5%;
+}
+
+.icon_main i {
+    width: 20%; float:left; text-align: center;
+    font-size: 36px; color: #fff;
+}
+
+.icon_main i:hover {
+    text-shadow: 0 0 30px aliceblue;
+    transition: 0.3s; cursor: pointer;
+}
+
+.menu {
+    width: 100%; height: 50%; position: absolute; top: 10%;
+    background-color: rgba(240, 248, 255, 0.0);
+}
+
+.menu .row {
+    width: 100%; height: 20%; font-size: 36px;
+    color: #fff; text-align: center;
+}
+
+.menu .row i {
+    width: 20%; float: left;
 }
