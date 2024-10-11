@@ -3,3 +3,61 @@
     margin: 0 auto;
     padding: 0 auto;
 }
+
+body {
+    background-color: transparent;
+}
+
+.phone_wrapper {
+    width: 15vw; height: 60vh; background-color: black;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px; border-style: outset;
+    box-shadow: 0 0 15px 1px #000;
+    padding: 20px 10px;
+}
+
+.screen {
+    width: 15vw; height: 60vh; border-radius: 5px;
+    background: url(../assets/img/bg_stars.svg) center no-repeat #1253;
+    background-size: 150%; position: relative;
+}
+
+.notification {
+    width: 100%; height: 3%;
+    background-color: rgba(0,0,0,0.0);
+    position: absolute; top: 0;
+    border-radius: 0px 0px 0px 0px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.notification:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+.notification .left,
+.notification .cent,
+.notification .rght {
+    width: 25%; float: left;
+    padding: 3px 0 0 0;
+}
+
+.notification .left {
+    text-align: left;
+    padding: 3px 0 0 3px;
+}
+
+.notification .cent {
+    width: 48%;
+    text-align: center;
+}
+
+.notification .rght {
+    text-align: right;
+}
+
+.icon_main {
+    width: 100%; height: 3%;
+    line-height: 8%;
+}
