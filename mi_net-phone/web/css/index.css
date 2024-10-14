@@ -71,6 +71,11 @@ body {
     font-size: 36px; color: #fff;
 }
 
+.icon_main button {
+    background-color: transparent; border-color: transparent;
+}
+
+
 .icon_main i {
     width: 20%;
 }
